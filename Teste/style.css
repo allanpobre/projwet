@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Fundo principal claro */
+  color: #333; /* Texto escuro para contraste */
+}
+
+header .navbar {
+  background-color: #ffffff; /* Navbar clara */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header .navbar-brand .logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+main {
+  margin-top: 120px; /* Ajusta a margem para telas menores */
+}
+
+article {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Texto principal */
+  padding: 15px;
+  background-color: #ffffff; /* Fundo para artigos */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+article h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000; /* Título em preto */
+}
+
+article p {
+  margin-bottom: 1.5rem;
+}
+
+article p strong {
+  font-weight: bold;
+  color: #000; /* Destaque para texto em negrito */
+}
+
+footer {
+  background-color: #f1f1f1; /* Fundo claro */
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555; /* Texto do footer */
+}
+
+footer a {
+  text-decoration: none;
+  color: #007bff; /* Azul para links */
+}
+
+footer a:hover {
+  color: #0056b3; /* Destaque ao passar o mouse */
+}
+
+.noticias {
+  width: 90%; /* Ajusta para caber em telas menores */
+  max-width: 700px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.titulo {
+  color: #000; /* Texto em preto */
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.imagem {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+  border: 1px solid #ddd; /* Borda sutil para imagens */
+  border-radius: 8px;
+}
+
+.assinatura {
+  font-size: small;
+  font-style: italic;
+  color: #666; /* Texto cinza claro */
+}
+
+header {
+  background-color: #ffffff; /* Fundo branco */
+  height: 105px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais clara */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-toggler {
+  color: #333;
+}
+
+.logo {
+  position: relative;
+  left: 25%;
+  padding: 7px;
+}
+
+.footer {
+  background-color: #f1f1f1; /* Fundo claro */
+  border-top: 1px solid #ddd; /* Linha separadora */
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000; /* Texto em preto */
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  color: #007bff; /* Azul para ícones */
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #0056b3; /* Destaque dos ícones ao passar o mouse */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+    padding-top: 150px;
+  }
+
+  .navbar-toggler {
+    right: 10px;
+  }
+
+  .logo {
+    left: 0;
+    padding: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    margin-top: 80px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .imagem {
+    padding-bottom: 5px;
+  }
+}
