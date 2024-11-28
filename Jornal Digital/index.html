@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Principais Tendências Culinárias de 2024</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme-style" href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="imagens/Logo (Claro).png" width="200px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU </span>  
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+
+                <div class="container">
+                  <h1>Encontre Receitas</h1>
+                  <input type="text" id="ingredients" placeholder="Insira um ingrediente em inglês">
+                  <button class="api" onclick="procurarReceitas()">Buscar Receitas</button>
+              
+                  <h2>Receitas Encontradas:</h2>
+                  <ul id="recipeList">Escreva um ingrediente em inglês</ul>
+              </div>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="titulo">
+    <p>Principais Notícias</p>
+  </section>
+
+  <div class="divisao">
+  <section class="noticias">
+    <div class="blocoFlex">
+     
+      <div class="blocos" onclick="window.location.href='T/CM.html';">
+        <img class="fotosNoticias" src="imagens/GM.jpg">
+        <a><strong>Cozinha Molecular: A Ciência Por Trás da Alta Gastronomia</strong></a>
+      </div>
+      <div class="blocos" onclick="window.location.href='T/PA.html';">
+        <img class="fotosNoticias" src="imagens/pa.jpg">
+        <a><strong>Políticas Alimentares Rigorosas e os Impactos na Indústria Culinária</strong></a>
+      </div>
+      <div class="blocos" onclick="window.location.href='T/CDD.html';">
+        <img class="fotosNoticias" src="imagens/cd.jpg">
+        <a><strong>A Controvérsia das Dietas de Exclusão no Mundo da Alimentação</strong></a>
+      </div>
+    </div>
+    <div class="blocoFlex">
+      <div class="blocos"  onclick="window.location.href='T/PTC.html';">
+        <img class="fotosNoticias" src="imagens/imagem-exemplo.jpg">
+        <a><strong>As Principais Tendências Culinárias de 2024: Do Farm-to-Table ao Plant-Based</strong></a>
+      </div>
+      <div class="blocos"  onclick="window.location.href='T/CPS.html';">
+        <img class="fotosNoticias" src="imagens/cozinha-divertida.jpg">
+        <a><strong>Cozinhar pode ser uma experiência divertida e recompensadora. Para quem está começando na cozinha,
+          seguir algumas dicas simples pode fazer toda a diferença no sabor e na apresentação dos pratos.</strong></a>
+      </div>
+      <div class="blocos"  onclick="window.location.href='T/NF.html';">
+        <img class="fotosNoticias" src="imagens/.jpg">
+        <a><strong>As Novas Fronteiras da Alimentação: Tecnologia e Inovação na Cozinha de 2024</strong></a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="aside">
+  <aside>
+    <div class="tituloAside">
+    <p>Recomendações</p>
+    </div>
+
+    <div class="noticiasAside">
+      <div class="blocoAside" onclick="window.location.href='index.html';">
+        <img class="imagensAside" src="imagens/da.jpg">
+        <a>Dicas de Alimentação para uma Vida Mais Saudável</a>
+      </div>
+      <div class="blocoAside" onclick="window.location.href='index.html';">
+        <img class="imagensAside" src="imagens/pa.jpg">
+        <a>Como Planejar Refeições Saudáveis e Econômicas</a>
+      </div> 
+      <div class="blocoAside" onclick="window.location.href='T/RAR.html';">
+        <img class="imagensAside" src="imagens/shrek.jpg">
+        <a>O Renascimento da Alimentação Regional: Ingredientes e Receitas Locais no Cenário Global de 2024</a>
+      </div> 
+      <div class="blocoAside" onclick="window.location.href='T/CF.html';">
+        <img class="imagensAside" src="imagens/shrek.jpg">
+        <a>Comida Funcional: O Foco em Saúde e Bem-Estar nas Refeições de 2024</a>
+      </div> 
+    </div>
+    
+  </aside>
+  </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Sobre Nós</h5>
+          <p>
+            Apaixonados por culinária e inovação, exploramos tendências que moldam o futuro da gastronomia.
+          </p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Links Rápidos</h5>
+          <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <div class="d-flex justify-content-center">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: #333;">
+      <p class="small">© 2024 Sabores & Saberes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

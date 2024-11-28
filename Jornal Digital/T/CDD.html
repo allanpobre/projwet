@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contróversias das Dietas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme-style" href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU </span>  
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="noticias">
+    <article>
+      <strong><h1 class="titulo">A Controvérsia das Dietas de Exclusão no Mundo da Alimentação</h1></strong>
+      <img src="imagem-exemplo.png" class="imagem">
+      <h5 class="assinatura">Autor - Data | Horário</h5>
+      <hr>
+
+      <p>Dietas de exclusão, como as que eliminam completamente glúten, lactose ou outros grupos alimentares, estão em alta, mas geram
+         divisões profundas entre especialistas em nutrição, médicos e consumidores. A eficácia e a necessidade dessas dietas continuam
+          a ser amplamente debatidas.</p>
+
+      <p>Nos últimos anos, dietas de exclusão, que eliminam certos grupos alimentares como glúten, lactose e outros componentes, tornaram-se
+         extremamente populares. No entanto, essa tendência tem gerado uma série de controvérsias e debates intensos na comunidade de saúde
+          e entre o público em geral.</p>
+
+      <p>As dietas sem glúten, por exemplo, são essenciais para pessoas com doença celíaca, uma condição autoimune em que a ingestão de 
+        glúten danifica o intestino delgado. No entanto, muitas pessoas sem essa condição adotaram dietas sem glúten na crença de que são
+         mais saudáveis ou ajudam na perda de peso. Especialistas em nutrição alertam que, para a maioria das pessoas, a exclusão do glúten 
+         pode levar à falta de nutrientes importantes, como fibras e vitaminas do complexo B.    </p>
+
+      <p>Da mesma forma, a intolerância à lactose, que afeta uma parcela significativa da população, levou ao aumento do consumo de
+        produtos sem lactose. No entanto, alguns nutricionistas questionam se a eliminação completa da lactose é necessária para todos
+        os indivíduos que experimentam desconforto digestivo ocasional. A reintrodução gradual de lactose pode, em muitos casos, ajudar
+        o corpo a readaptar-se e melhorar a digestão.</p>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Sobre Nós</h5>
+          <p>
+            Apaixonados por culinária e inovação, exploramos tendências que moldam o futuro da gastronomia.
+          </p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Links Rápidos</h5>
+          <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <div class="d-flex justify-content-center">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: #333;">
+      <p class="small">© 2024 Sabores & Saberes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById("toggle-theme");
+const linkElement = document.getElementById("theme-style");
+const headerElement = document.querySelector("header");
+const bodyElement = document.body;
+let darkMode = false;
+
+const darkHeaderHTML = `
+  <nav class="navbar bg-dark text-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="Logo (Escuro).png" width="200px" height="80px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU</span>  
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <button id="toggle-theme" class="btn btn-light position-fixed" style="top: 10px; right: 10px;">Modo Claro</button>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Página Inicial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+`;
+
+function toggleTheme() {
+  if (darkMode) {
+    // Mudar para o tema claro
+    linkElement.href = "style.css"; // Link para o CSS claro
+    headerElement.innerHTML = `
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="text me-2">MENU</span>  
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    `;
+  } else {
+    // Mudar para o tema escuro
+    linkElement.href = "style(escuro).css"; // Link para o CSS escuro
+    headerElement.innerHTML = darkHeaderHTML;
+  }
+
+  // Atualizar eventos após troca do HTML
+  document.getElementById("toggle-theme").addEventListener("click", toggleTheme);
+
+  // Alternar o estado do modo escuro
+  darkMode = !darkMode;
+
+  // Garantir que a rolagem funcione corretamente
+  setTimeout(() => {
+    bodyElement.classList.add('overflow-auto');  // Garantir que o body tenha rolagem
+  }, 100);
+}
+
+// Adicionar evento inicial
+toggleButton.addEventListener("click", toggleTheme);
+
+  </script>
+  
+</body>
+</html>

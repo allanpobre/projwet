@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding-top: 105px;
+    background-color: #121212; /* Fundo principal escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background-color: #212324; /* Navbar escura */
+    height: 105px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra mais escura */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-toggler {
+    color: #e0e0e0; /* Cor do texto do botão */
+}
+
+.logo {
+    position: relative;
+    left: 25%;
+    padding: 7px;
+}
+
+.titulo {
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff; /* Texto em branco */
+}
+
+.divisao {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em múltiplas linhas se necessário */
+}
+
+.blocoFlex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os blocos se ajustem em múltiplas linhas se necessário */
+    gap: 70px;
+    margin-left: 80px;
+}
+
+.blocos {
+    width: 257px;
+    margin-top: 50px;
+    font-size: 15px;
+    text-align: justify;
+    cursor: pointer;
+    color: #d1d1d1; /* Texto claro */
+    background-color: #1a1a1a; /* Fundo escuro */
+}
+
+.fotosNoticias {
+    width: 257px;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 1px solid #333; /* Borda sutil */
+}
+
+.aside {
+    margin-top: 50px;
+    margin-left: 13%;
+    width: 390px;
+    height: 535px;
+    background-color: #1f1f1f; /* Fundo escuro */
+    border-radius: 15px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.tituloAside {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: #ffffff; /* Título em branco */
+}
+
+.noticiasAside {
+    margin: 30px;
+    row-gap: 15px;
+    color: #d1d1d1; /* Texto claro */
+}
+
+.imagensAside {
+    width: 125px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #333; /* Borda sutil */
+}
+
+.blocoAside {
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+    font-size: 13px;
+    gap: 10px;
+    text-align: justify;
+    cursor: pointer;
+    color: #d1d1d1; /* Texto claro */
+    background-color: #1a1a1a; /* Fundo escuro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo {
+        left: 0;
+        margin: 0 auto;
+        width: 150px;
+        height: 60px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .blocoFlex {
+        margin-left: 0;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .blocos, .aside, .blocoAside {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aside {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .tituloAside {
+        font-size: 1.5rem;
+    }
+
+    .noticiasAside, .blocoAside {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .imagensAside {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .blocoFlex {
+        gap: 10px;
+    }
+
+    .blocos, .aside, .blocoAside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tituloAside {
+        font-size: 1.2rem;
+    }
+
+    .noticiasAside, .blocoAside {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .imagensAside {
+        width: 80px;
+        height: auto;
+    }
+}

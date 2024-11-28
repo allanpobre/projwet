@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Políticas Alimentares Rigorosas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme-style" href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU </span>  
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="noticias">
+    <article>
+      <strong><h1 class="titulo">Políticas Alimentares Rigorosas e os Impactos na Indústria Culinária</h1></strong>
+      <img src="imagem-exemplo.png" class="imagem">
+      <h5 class="assinatura">Autor - Data | Horário</h5>
+      <hr>
+
+      <p>Nos últimos anos, muitos países têm implementado políticas alimentares mais rigorosas com o objetivo de promover a saúde pública e a sustentabilidade ambiental. No entanto, essas regulamentações têm provocado uma série de reações adversas, tanto positivas quanto negativas, no setor alimentício.</p>
+
+      <p>Uma das principais mudanças é a restrição ao uso de certos ingredientes e aditivos considerados prejudiciais à saúde. Ingredientes como gorduras trans, altos níveis de açúcar e sódio, e alguns conservantes estão sendo cada vez mais limitados. Embora essas medidas sejam vistas como necessárias para combater a obesidade e outras doenças crônicas, elas têm encontrado resistência por parte de fabricantes de alimentos e restaurantes, que alegam dificuldades em adaptar suas receitas e produtos às novas normas.</p>
+
+      <p>Além disso, as políticas de rotulagem de alimentos, que exigem informações mais detalhadas sobre os ingredientes e os valores nutricionais, têm gerado debate. Defensores da medida argumentam que ela proporciona aos consumidores mais transparência e melhores condições para fazer escolhas alimentares conscientes. Por outro lado, críticos afirmam que essas exigências aumentam os custos de produção e podem resultar em preços mais altos para os consumidores.</p>
+
+      <p>Outro ponto controverso é a promoção de dietas sustentáveis, que incentivam a redução do consumo de carne e produtos de origem animal em favor de uma alimentação baseada em vegetais. Enquanto ambientalistas e defensores dos direitos dos animais aplaudem essa iniciativa, a indústria pecuária tem se manifestado contra, destacando os impactos econômicos negativos e a possível perda de empregos no setor.
+         Essas políticas estão moldando o futuro da alimentação global, mas a implementação eficaz dessas mudanças requer um equilíbrio cuidadoso entre saúde pública, sustentabilidade e viabilidade econômica.</p>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Sobre Nós</h5>
+          <p>
+            Apaixonados por culinária e inovação, exploramos tendências que moldam o futuro da gastronomia.
+          </p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Links Rápidos</h5>
+          <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <div class="d-flex justify-content-center">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: #333;">
+      <p class="small">© 2024 Sabores & Saberes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById("toggle-theme");
+const linkElement = document.getElementById("theme-style");
+const headerElement = document.querySelector("header");
+const bodyElement = document.body;
+let darkMode = false;
+
+const darkHeaderHTML = `
+  <nav class="navbar bg-dark text-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="Logo (Escuro).png" width="200px" height="80px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU</span>  
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <button id="toggle-theme" class="btn btn-light position-fixed" style="top: 10px; right: 10px;">Modo Claro</button>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Página Inicial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+`;
+
+function toggleTheme() {
+  if (darkMode) {
+    // Mudar para o tema claro
+    linkElement.href = "style.css"; // Link para o CSS claro
+    headerElement.innerHTML = `
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="text me-2">MENU</span>  
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    `;
+  } else {
+    // Mudar para o tema escuro
+    linkElement.href = "style(escuro).css"; // Link para o CSS escuro
+    headerElement.innerHTML = darkHeaderHTML;
+  }
+
+  // Atualizar eventos após troca do HTML
+  document.getElementById("toggle-theme").addEventListener("click", toggleTheme);
+
+  // Alternar o estado do modo escuro
+  darkMode = !darkMode;
+
+  // Garantir que a rolagem funcione corretamente
+  setTimeout(() => {
+    bodyElement.classList.add('overflow-auto');  // Garantir que o body tenha rolagem
+  }, 100);
+}
+
+// Adicionar evento inicial
+toggleButton.addEventListener("click", toggleTheme);
+
+  </script>
+  
+</body>
+</html>

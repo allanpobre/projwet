@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo principal escuro */
+    color: #e0e0e0; /* Texto claro para contraste */
+  }
+  
+  header .navbar {
+    background-color: #1f1f1f; /* Navbar escura */
+  }
+  
+  header .navbar-brand .logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  main {
+    margin-top: 120px; /* Ajusta a margem para telas menores */
+  }
+  
+  article {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d1d1d1; /* Texto mais claro */
+    padding: 15px;
+    background-color: #1a1a1a; /* Fundo para artigos */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Título em branco */
+  }
+  
+  article p {
+    margin-bottom: 1.5rem;
+  }
+  
+  article p strong {
+    font-weight: bold;
+    color: #ffffff; /* Destaque para texto em negrito */
+  }
+  
+  footer {
+    background-color: #1f1f1f; /* Fundo escuro */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #b3b3b3; /* Texto do footer */
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #4fc3f7; /* Azul claro para links */
+  }
+  
+  footer a:hover {
+    color: #81d4fa; /* Destaque ao passar o mouse */
+  }
+  
+  .noticias {
+    width: 90%; /* Ajusta para caber em telas menores */
+    max-width: 700px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    color: #ffffff; /* Texto em branco */
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .imagem {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    border: 1px solid #333; /* Borda sutil para imagens */
+    border-radius: 8px;
+  }
+  
+  .assinatura {
+    font-size: small;
+    font-style: italic;
+    color: #a3a3a3; /* Texto cinza claro */
+  }
+  
+  header {
+    background-color: #212324;
+    height: 105px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra mais escura */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .navbar-toggler {
+    color: white;
+  }
+  
+  .logo {
+    position: relative;
+    left: 25%;
+    padding: 7px;
+  }
+  
+  .footer {
+    background-color: #1f1f1f; /* Fundo escuro */
+    border-top: 1px solid #333; /* Linha separadora */
+  }
+  
+  .footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto em branco */
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer i {
+    font-size: 1.5rem;
+    color: #4fc3f7; /* Azul claro para ícones */
+    transition: color 0.3s;
+  }
+  
+  .footer i:hover {
+    color: #81d4fa; /* Destaque dos ícones ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .titulo {
+      font-size: 1.5rem;
+      padding-top: 150px;
+    }
+  
+    .navbar-toggler {
+      right: 10px;
+    }
+  
+    .logo {
+      left: 0;
+      padding: 0;
+    }
+  
+    article {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    main {
+      margin-top: 80px;
+    }
+  
+    .titulo {
+      font-size: 1.2rem;
+    }
+  
+    .imagem {
+      padding-bottom: 5px;
+    }
+  }
+  

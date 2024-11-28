@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Novas Fronteiras da Alimentação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme-style" href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU </span>  
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="noticias">
+    <article>
+      <strong><h1 class="titulo">As Novas Fronteiras da Alimentação: Tecnologia e Inovação na Cozinha de 2024</h1></strong>
+      <img src="imagem-exemplo.png" class="imagem">
+      <h5 class="assinatura">Autor - Data | Horário</h5>
+      <hr>
+
+      <p>Em 2024, a tecnologia e a inovação estão se tornando protagonistas no universo culinário. Desde impressoras 3D de 
+        alimentos até ingredientes produzidos em laboratório, as tendências tecnológicas estão reformulando a forma como preparamos
+        e consumimos nossos alimentos.</p>
+
+      <p>O ano de 2024 promete trazer uma revolução tecnológica para a gastronomia, com inovações que vão muito além das técnicas 
+        tradicionais de preparo. A impressão 3D de alimentos, por exemplo, está se tornando uma realidade cada vez mais acessível, 
+        permitindo a criação de pratos personalizados e complexos que antes seriam impensáveis. Além disso, a produção de ingredientes 
+        laboratoriais, como carne cultivada em laboratório, está ganhando destaque, oferecendo alternativas sustentáveis para a indústria
+        alimentícia.</p>
+
+      <p>Os chefs de cozinha estão cada vez mais explorando essas tecnologias para criar pratos que unem arte, ciência e sustentabilidade. 
+        A personalização dos alimentos também está em alta, com consumidores podendo escolher desde o formato até a composição nutricional 
+        de suas refeições, tudo por meio de dispositivos inteligentes. Essas tendências prometem não só transformar a experiência 
+        gastronômica, mas também ajudar a resolver problemas globais como a escassez de recursos naturais e a fome.</p>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Sobre Nós</h5>
+          <p>
+            Apaixonados por culinária e inovação, exploramos tendências que moldam o futuro da gastronomia.
+          </p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Links Rápidos</h5>
+          <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <div class="d-flex justify-content-center">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: #333;">
+      <p class="small">© 2024 Sabores & Saberes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById("toggle-theme");
+const linkElement = document.getElementById("theme-style");
+const headerElement = document.querySelector("header");
+const bodyElement = document.body;
+let darkMode = false;
+
+const darkHeaderHTML = `
+  <nav class="navbar bg-dark text-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="Logo (Escuro).png" width="200px" height="80px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="text me-2">MENU</span>  
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <button id="toggle-theme" class="btn btn-light position-fixed" style="top: 10px; right: 10px;">Modo Claro</button>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Página Inicial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+`;
+
+function toggleTheme() {
+  if (darkMode) {
+    // Mudar para o tema claro
+    linkElement.href = "style.css"; // Link para o CSS claro
+    headerElement.innerHTML = `
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="Logo (Claro).png" width="200px" height="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="text me-2">MENU</span>  
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <button id="toggle-theme" class="btn btn-primary position-fixed" style="top: 10px; right: 10px;">Modo Escuro</button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    `;
+  } else {
+    // Mudar para o tema escuro
+    linkElement.href = "style(escuro).css"; // Link para o CSS escuro
+    headerElement.innerHTML = darkHeaderHTML;
+  }
+
+  // Atualizar eventos após troca do HTML
+  document.getElementById("toggle-theme").addEventListener("click", toggleTheme);
+
+  // Alternar o estado do modo escuro
+  darkMode = !darkMode;
+
+  // Garantir que a rolagem funcione corretamente
+  setTimeout(() => {
+    bodyElement.classList.add('overflow-auto');  // Garantir que o body tenha rolagem
+  }, 100);
+}
+
+// Adicionar evento inicial
+toggleButton.addEventListener("click", toggleTheme);
+
+  </script>
+  
+</body>
+</html>
