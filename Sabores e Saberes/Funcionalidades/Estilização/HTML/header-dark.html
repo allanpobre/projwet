@@ -1,0 +1,38 @@
+<style>
+  body {
+    background-color: #121212;
+    color: white;
+  }
+  .navbar {
+    background-color: #343a40 !important;
+  }
+  .footer {
+    background-color: #343a40;
+    color: white;
+  }
+  </style>
+<nav class="navbar bg-dark text-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="../../Funcionalidades/Estilização/Logos/Logo (Escuro).png" width="200px" height="80px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="text me-2">MENU</span>  
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <button id="toggle-theme" class="btn btn-light position-fixed" style="top: 10px; right: 10px;">Modo Claro</button>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Página Inicial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
